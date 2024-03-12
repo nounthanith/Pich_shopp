@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pich_Shop</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #80c234;
+        }
+
+        header {
+            background-color: #9f52f1;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product { 
+            padding: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cart {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .cart p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pich_Shop</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet.</p>
+            <p>$9.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. Lorem ipsum dolor sit amet.</p>
+            <p>$5.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+    <div class="cart">
+        <p>Shopping Cart</p>
+        <p>Total: $0.00</p>
+    </div>
+</body>
+</html>
